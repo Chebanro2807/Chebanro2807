@@ -10,10 +10,10 @@
     <script src="modal.js" defer></script>
 </head>
 <body>
+    <!-- Картинки -->
     <img class="img js-open-modal" data-modal="first" src="title_cover_4.jpg">
     <img class="img js-open-modal" data-modal="second" src="title_cover_4.jpg">
     <img class="img js-open-modal" data-modal="third" src="title_cover_4.jpg">
-
 
     <div class="modal js-modal" data-modal="first">
         <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
@@ -27,7 +27,24 @@
         <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
         <img src="title_cover_4.jpg">
     </div>
+    <!-- Текст -->
 
+    <div class="text js-open-modal" data-modal="details">Детальнее</div>
+    <div class="text js-open-modal" data-modal="else">Прочее</div>
+    <div class="text js-open-modal" data-modal="fat">Толстый</div>
+
+
+    <div class="modal text_modal js-modal" data-modal="details">
+        <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam odio, hic ipsam deleniti rem minima aliquid tenetur, esse alias cum aperiam laborum quas doloremque eum perspiciatis omnis assumenda molestias eaque.</div>
+    <div class="modal text_modal js-modal" data-modal="else">
+        <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sunt voluptate, tempore accusantium pariatur repellendus nostrum nulla, magnam veritatis explicabo recusandae blanditiis assumenda provident modi aut, consequatur eius quidem corrupti.</div>
+    <div class="modal text_modal js-modal" data-modal="fat">
+        <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste explicabo voluptate a doloremque perspiciatis corporis dolores recusandae atque error pariatur dolorum consequatur nemo necessitatibus nostrum, repellendus ab at ipsa quas?</div>
+
+    <!-- Серая подложка, обащяя -->
     <div class="overlay js-modal-overlay"></div>
 </body>
 </html>

@@ -37,6 +37,30 @@
     transition: 0.3s all;
 }
 
+.text{
+    text-align: center;
+    width: 200px;
+    height: 20px;
+    background-color: rosybrown;
+    cursor: pointer;
+}
+
+.text_modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 20;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s all;
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    padding: 10px;
+    padding-top: 50px;
+}
+
 .is-show{
     opacity: 1;
     visibility: visible;
