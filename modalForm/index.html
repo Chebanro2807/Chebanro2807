@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="js/lips/build/css/intlTelInput.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="js/lips/build/css/intlTelInput.min.css">
+    <style>        
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+    </style>
+        <script src="script.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@16.0.3/build/js/intlTelInput.js"></script>
+
+</head>
+<body>
+    <!-- Текст -->
+
+    <div class="text js-open-modal" data-modal="details">Детальнее</div>
+
+    <div class="modal js-modal modal__contacts-wrap" data-modal="details">
+        <div class="contact_us-title_text">
+            Зв’язатись з нами
+        </div>
+        <form action="">
+            <div class="contact_us-text">
+                Ваше ім’я:
+            </div>
+            <div>
+                <input class="contact_us-input" type="text" placeholder="Ваше ім’я">
+            </div>
+
+            <div class="contact_us-text">
+                Ваш телефон:
+            </div>
+            <div class="contact_us-text">
+                <input class="contact_us-input" type="tel" id="phone">
+            </div>
+
+            <div class="contact_us-text">
+                Ваш e-mail:
+            </div>
+            <div>
+                <input class="contact_us-input" type="text" placeholder="Ваш e-mail">
+            </div>
+
+            <div class="contact_us-text">
+                Повідомлення:
+            </div>
+            <div>
+                <textarea rows="4" class="contact_us-textarea" type="text" placeholder="Повідомлення"></textarea>
+            </div>
+
+            <button class="contact_us_button">Відправити</button>
+        </form>
+        <script>
+            var input = document.querySelector("#phone");
+            var iti = window.intlTelInput(input, {
+            utilsScript: 
+            "https://cdn.jsdelivr.net/npm/intl-tel-input@16.0.3/build/js/utils.js",
+            initialCountry: "ua"
+            });
+        </script>
+    </div>
+    <!-- Серая подложка, обащяя -->
+    <div class="overlay js-modal-overlay">
+        <svg class="modal__cross js-modal-close modal__cross_white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/>
+        </svg>
+    </div>
+</body>
+</html>
