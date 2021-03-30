@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>test</title>
     <link rel="stylesheet" href="js/lips/build/css/intlTelInput.min.css">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="js/lips/build/css/intlTelInput.min.css">
+    <link rel="stylesheet" href="style.css">
     <style>        
         @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
     </style>
@@ -25,36 +25,34 @@
         <div class="contact_us-title_text">
             Зв’язатись з нами
         </div>
-        <form action="">
-            <div class="contact_us-text">
-                Ваше ім’я:
+        <form id="sendForm" action="">
+            <div class="form_wrap">
+                <div id="userNameWrap" class="contact_us-text_wrap">
+                    <div class="contact_us-text">
+                        Ваше ім’я: 
+                    </div>
+                    <input id="userName" class="contact_us-input contact_us-text" type="text" placeholder="Ваше ім’я" pattern="[A-Za-zА-Яа-яЁё]" maxlength="30">
+                </div>
+                <div class="contact_us-text_wrap" id="phone_wrap">
+                    <div class="contact_us-text">
+                        Ваш телефон:
+                    </div> 
+                    <input id="phone" class="contact_us-input contact_us-text" type="tel" pattern="[0-9]{10}">
+                </div>
+                <div class="contact_us-text_wrap">
+                    <div class="contact_us-text">
+                        Ваш e-mail:
+                    </div>
+                    <input id="userEmail" class="contact_us-input contact_us-text" type="text" placeholder="Ваш e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                </div>
+                <div class="contact_us-text_wrap">
+                    <div class="contact_us-text">
+                        Повідомлення:
+                    </div>
+                    <textarea id="userMessage" rows="4" class="contact_us-textarea contact_us-text" type="text" placeholder="Повідомлення" maxlength="254"></textarea>
+                </div>
             </div>
-            <div>
-                <input class="contact_us-input" type="text" placeholder="Ваше ім’я">
-            </div>
-
-            <div class="contact_us-text">
-                Ваш телефон:
-            </div>
-            <div class="contact_us-text">
-                <input class="contact_us-input" type="tel" id="phone">
-            </div>
-
-            <div class="contact_us-text">
-                Ваш e-mail:
-            </div>
-            <div>
-                <input class="contact_us-input" type="text" placeholder="Ваш e-mail">
-            </div>
-
-            <div class="contact_us-text">
-                Повідомлення:
-            </div>
-            <div>
-                <textarea rows="4" class="contact_us-textarea" type="text" placeholder="Повідомлення"></textarea>
-            </div>
-
-            <button class="contact_us_button">Відправити</button>
+            <div id="btnSend" class="contact_us_button">Відправити</div>  
         </form>
         <script>
             var input = document.querySelector("#phone");
