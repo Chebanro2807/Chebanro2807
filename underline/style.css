@@ -1,0 +1,28 @@
+body{
+    position: relative;
+}
+
+.test{
+    display: block;
+    border: 0px;
+    width: 100%;
+    outline:none;
+    background: none;
+}
+
+.span{
+    position: absolute;
+    top: 21px;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    background-color: red;
+    border: 0px;
+    z-index: 10;
+    transition: width 0.8s linear;
+}
+
+.test:focus + .span{
+    width: 100%;
+}
+

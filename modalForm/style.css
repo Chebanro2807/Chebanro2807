@@ -150,3 +150,20 @@
     background-color: #F95D51;
     font-size: 14px;
 }
+
+.sucsess{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 100px;
+    background-color: rgb(93, 196, 118);
+    color: rgb(255, 255, 255);
+    font-family: 'Merriweather';
+    font-size: 14px;
+}
+
+.sucsess .is-show{
+    opacity: 1;
+    visibility: visible;
+}

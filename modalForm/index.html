@@ -17,10 +17,15 @@
 
 </head>
 <body>
-    <!-- Текст -->
+    <!-- Кнопка для формы -->
 
     <div class="text js-open-modal" data-modal="details">Детальнее</div>
 
+    <!-- Модальное окно успешной отправки -->
+    <div class="sucsess modal">
+        Дякуємо! Дані успішно відправлені.
+    </div>
+     <!-- Модальное окно формы-->
     <div class="modal js-modal modal__contacts-wrap" data-modal="details">
         <div class="contact_us-title_text">
             Зв’язатись з нами
@@ -37,7 +42,7 @@
                     <div class="contact_us-text">
                         Ваш телефон:
                     </div> 
-                    <input id="phone" class="contact_us-input contact_us-text" type="tel" pattern="[0-9]{10}">
+                    <input id="phone" class="contact_us-input contact_us-text" type="tel" pattern="[0-9]{10}" maxlength="10" placeholder="050 999 9999">
                 </div>
                 <div class="contact_us-text_wrap">
                     <div class="contact_us-text">

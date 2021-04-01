@@ -13,13 +13,15 @@ InputField.prototype.deletePrompt = function() {
 
 InputField.prototype.validate = function() {
     this.deletePrompt();
-    if (this._props.id === "userMessage") return;
+    if (this._props.id === "userMessage") return true;
     if (!this.validateElement(this._props)) {
         this.createPrompt((this._props.id === "userName") ? "Username must have alphabet characters only"
             : (this._props.id === "phone") ? "Phone must have 10 numbers" 
             : (this._props.id === "userEmail") ? "You have entered an invalid email address!"
             : "ERROR");
+        return false;
     }
+    return true;
 }
 
 InputField.prototype.validateElement = function(elem) {
@@ -55,7 +57,7 @@ FormSubmit.prototype.validate = function() {
         if (!validatedItem) {
             this.createBigPrompt("Будь ласка, заповніть усі обов’язкові поля");
         }
-        isSubmited = isSubmited && validatedItem;
+        isSubmited &= (validatedItem) ? elem.validate() : validatedItem;
     });
     if (isSubmited) {
         this._props.submit();
