@@ -1,0 +1,46 @@
+.ball {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    background: #5A30F0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.wrap {
+    background: red;
+    width: 600px;
+    height: 600px;
+    position: fixed;
+    top: 585px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* .oreder-cleaning__text {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 165px;
+    height: 102px;
+    font-family: "TT Travels";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: black;
+    -webkit-animation: rotating 20s infinite linear;
+    animation: rotating 20s infinite linear;
+    -webkit-transition: font-size 2s;
+    transition: font-size 2s;
+} */
