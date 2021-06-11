@@ -1,4 +1,36 @@
-.ball {
+.wrap {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.y-1{
+    width: 405px;
+    height: 405px;
+    border-radius: 100%;
+    border: 1px solid black;
+    display: inline-block;
+}
+.y-2 {
+    width: 195px;
+    height: 195px;
+    background: #5A30F0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+}
+
+.y-2:hover {
+    width: 250px;
+    height: 250px;
+}
+
+
+/* .ball {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -20,8 +52,11 @@
     transform: translateX(-50%);
 }
 
-/* .oreder-cleaning__text {
+.oreder-cleaning__text {
     position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
